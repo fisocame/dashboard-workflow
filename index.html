@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Weekly Assistant Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Weekly Workflow Dashboard</h1>
-    <p>UFS TEAM</p>
+    <h1>Weekly Assistant Dashboard</h1>
+    <p>Manage your team's focus day by day</p>
   </header>
 
   <main>
-    <table>
-      <thead>
-        <tr>
-          <th>Day</th>
-          <th>Assistant</th>
-          <th>Open campaigns on</th>
-          <th>On the platforms</th>
-          <th>Focus on these countries</th>
-          <th>Some extra tasks</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Loop through days and assistants -->
-        <!-- You can copy and paste these blocks to repeat for all combinations -->
-        <!-- Example: Monday -->
-        <tr>
-          <td>Monday</td>
-          <td>Faizan</td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-        </tr>
-        <tr>
-          <td>Monday</td>
-          <td>Sheraz</td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-        </tr>
-        <tr>
-          <td>Monday</td>
-          <td>Usman</td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-        </tr>
-        <tr>
-          <td>Monday</td>
-          <td>Shaham</td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-        </tr>
+    <!-- Repeat block for each day -->
+    <section class="day-section monday">
+      <h2>Monday</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Assistant</th>
+            <th>Open campaigns on</th>
+            <th>On the platforms</th>
+            <th>Focus on these countries</th>
+            <th>Some extra tasks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Faizan</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Sheraz</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Usman</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Shaham</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+        </tbody>
+      </table>
+    </section>
 
-        <!-- Repita para Tuesday, Wednesday, etc. -->
-        <!-- Você quer que eu gere todos os dias e todos os assistentes automaticamente? Posso fazer. -->
-      </tbody>
-    </table>
+    <section class="day-section tuesday">
+      <h2>Tuesday</h2>
+      <table> <!-- Repete a mesma estrutura -->
+        <thead><tr><th>Assistant</th><th>Open campaigns on</th><th>On the platforms</th><th>Focus on these countries</th><th>Some extra tasks</th></tr></thead>
+        <tbody>
+          <tr><td>Faizan</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Sheraz</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Usman</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Shaham</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="day-section wednesday">
+      <h2>Wednesday</h2>
+      <table>
+        <thead><tr><th>Assistant</th><th>Open campaigns on</th><th>On the platforms</th><th>Focus on these countries</th><th>Some extra tasks</th></tr></thead>
+        <tbody>
+          <tr><td>Faizan</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Sheraz</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Usman</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Shaham</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="day-section thursday">
+      <h2>Thursday</h2>
+      <table>
+        <thead><tr><th>Assistant</th><th>Open campaigns on</th><th>On the platforms</th><th>Focus on these countries</th><th>Some extra tasks</th></tr></thead>
+        <tbody>
+          <tr><td>Faizan</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Sheraz</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Usman</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Shaham</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="day-section friday">
+      <h2>Friday</h2>
+      <table>
+        <thead><tr><th>Assistant</th><th>Open campaigns on</th><th>On the platforms</th><th>Focus on these countries</th><th>Some extra tasks</th></tr></thead>
+        <tbody>
+          <tr><td>Faizan</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Sheraz</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Usman</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><td>Shaham</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+        </tbody>
+      </table>
+    </section>
   </main>
 </body>
 </html>
