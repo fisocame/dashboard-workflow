@@ -70,3 +70,18 @@ td[contenteditable="true"]:hover {
 tr:hover td {
   background-color: #f9f9f9;
 }
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: start;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  border-radius: 6px;
+  background-color: white;
+  padding: 4px;
+}
