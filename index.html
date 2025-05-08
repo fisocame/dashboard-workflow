@@ -1,78 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard de Assistentes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weekly Assistant Dashboard</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header>
-    <h1>Dashboard de Atividades</h1>
-    <p>Status atual das tarefas dos assistentes</p>
+    <h1>Weekly Assistant Dashboard</h1>
+    <p>Edit the weekly focus for each assistant</p>
   </header>
 
-  <section class="tabela">
-    <h2>Atividades</h2>
+  <main>
     <table>
       <thead>
         <tr>
-          <th>Assistente</th>
-          <th>Atividade</th>
-          <th>Status</th>
-          <th>Data</th>
+          <th>Day</th>
+          <th>Assistant</th>
+          <th>Open campaigns on</th>
+          <th>On the platforms</th>
+          <th>Focus on these countries</th>
+          <th>Some extra tasks</th>
         </tr>
       </thead>
       <tbody>
+        <!-- Loop through days and assistants -->
+        <!-- You can copy and paste these blocks to repeat for all combinations -->
+        <!-- Example: Monday -->
         <tr>
-          <td>Ana</td>
-          <td>Revisar relatórios</td>
-          <td>Concluído</td>
-          <td>07/05</td>
+          <td>Monday</td>
+          <td>Faizan</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
         </tr>
         <tr>
-          <td>Lucas</td>
-          <td>Preparar materiais</td>
-          <td>Em andamento</td>
-          <td>08/05</td>
+          <td>Monday</td>
+          <td>Sheraz</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
         </tr>
         <tr>
-          <td>João</td>
-          <td>Atualizar site</td>
-          <td>Pendente</td>
-          <td>09/05</td>
+          <td>Monday</td>
+          <td>Usman</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
         </tr>
+        <tr>
+          <td>Monday</td>
+          <td>Shaham</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+
+        <!-- Repita para Tuesday, Wednesday, etc. -->
+        <!-- Você quer que eu gere todos os dias e todos os assistentes automaticamente? Posso fazer. -->
       </tbody>
     </table>
-  </section>
-
-  <section class="grafico">
-    <h2>Status Geral</h2>
-    <canvas id="statusChart"></canvas>
-  </section>
-
-  <script>
-    const ctx = document.getElementById('statusChart').getContext('2d');
-    new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-        labels: ['Concluído', 'Em andamento', 'Pendente'],
-        datasets: [{
-          label: 'Tarefas',
-          data: [1, 1, 1], // Atualize conforme seus dados
-          backgroundColor: ['#4caf50', '#ff9800', '#f44336']
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            position: 'bottom'
-          }
-        }
-      }
-    });
-  </script>
+  </main>
 </body>
 </html>
