@@ -115,3 +115,30 @@ header p {
 .table-wrapper table {
   min-width: 700px;
 }
+
+.day-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #e3f2fd;
+  padding: 0.8rem 1rem;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.day-nav a {
+  text-decoration: none;
+  color: #0d47a1;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.day-nav a:hover {
+  background-color: #bbdefb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
