@@ -105,3 +105,12 @@ header p {
   font-size: 1.2rem;
   margin: 0;
 }
+
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table-wrapper table {
+  min-width: 700px;
+}
